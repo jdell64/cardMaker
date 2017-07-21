@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Pre-reqs
-This assumes you have nodejs installed and you are familiar with angular 2.
+This assumes you have nodejs installed, git installed, and you are familiar with angular 2.
 
 TODO: Make this easier for non-technical users.
 
@@ -12,6 +12,9 @@ TODO: Make this easier for non-technical users.
 1. Clone this repo
     
        git clone https://github.com/jdell64/cardMaker.git
+1. cd to that dir
+
+       cd ./cardMaker
 1. run `npm install`
 1. run `ng serve`
 1. add/edit a tsv file in `src/app/assets/card-lists`
