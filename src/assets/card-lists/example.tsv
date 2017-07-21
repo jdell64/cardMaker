@@ -1,0 +1,5 @@
+title	subtitle	cardHtmlClass	midbarContent	mainContent	quantity	imageSrc	backgroundColor	color	splitSubOnHyphen
+Beef Frank	hotdog		100% all beef.	When playing this card, you may put mustard on your hot dog.	4	/assets/question_mark.png	#DCE8F4	#333333	0
+Sausages	hotdog		That will leave a mark.	When playing this card, you may put ketchup on your hot dog.	2	/assets/question_mark.png	#DCE8F4	#333333	0
+Ketchup	condiment 		Not catsup, mind you.	+3 to hotdog related tasks	4	/assets/question_mark.png	#FEE3E5	#333333	0
+Mustard	condiment 		Spicy brown or yellow?	+4 to hotdog related tasks	2	/assets/question_mark.png	#FEE3E5	#333333	0

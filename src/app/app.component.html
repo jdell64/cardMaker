@@ -1,0 +1,18 @@
+<div id="noprint">
+  <label for="filename">{{foldername}}</label>
+  <input id="filename" name="filename" type="text" placeholder="file.tsv" [(ngModel)]="filename">
+  <button (click)="updateCards()">Refresh</button>
+  <div *ngIf="cardError" class="warn">{{cardError}}</div>
+</div>
+<div id="cardContainer">
+  <ng-container *ngFor="let card of cards |async ">
+    <!--{{card|json}}-->
+    <cm-playing-card *ngFor="let idx of getArrayFromNumber(card.quantity)" [title]="card.title"
+                     [subtitle]="card.subtitle" [mainContent]="card.mainContent"
+                     [midbarContent]="card.midbarContent" [imageSrc]="card.imageSrc"
+                     [color]="card.color" [backgroundColor]="card.backgroundColor"
+                     [cardHtmlClass]="card.cardHtmlClass" [splitSubOnHyphen]="card.splitSubOnHyphen"></cm-playing-card>
+  </ng-container>
+
+</div>
+<!--<router-outlet></router-outlet>-->

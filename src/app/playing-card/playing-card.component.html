@@ -1,0 +1,22 @@
+<div class="{{cardHtmlClass}}">
+  <md-card [ngStyle]="{ 'color': color, 'background': backgroundColor}">
+    <md-card-header>
+      <md-card-title class="playing-card-title">{{title}}</md-card-title>
+      <md-card-subtitle *ngIf="!splitSubTitle; else splitSubTitle" class="playing-card-subtitle">{{subtitle}}</md-card-subtitle>
+      <ng-template #splitSubTitle class="split-sub-title">
+        <md-card-subtitle class="split-sub-title">
+          <span class="subtitle-left">{{subtitleLeft}}</span>
+          <span class="subtitle-right">{{subtitleRight}}</span>
+          <span>&nbsp;</span>
+        </md-card-subtitle>
+      </ng-template>
+    </md-card-header>
+    <md-card-content class="card-image-wrapper">
+      <img class="playing-card-image" src="{{imageSrc}}"/>
+    </md-card-content>
+    <md-card-content class="card-content-wrapper">
+      <md-card-content class="playing-card-midbar">{{midbarContent}}</md-card-content>
+      <md-card-content class="playing-card-main-content">{{mainContent}}</md-card-content>
+    </md-card-content>
+  </md-card>
+</div>

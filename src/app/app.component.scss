@@ -1,0 +1,32 @@
+@import "game-specific-styles";
+
+cm-playing-card {
+  margin: .2in 4px;
+}
+
+#cardContainer {
+  display: table;
+  columns: 4;
+  width: 100%;
+  margin: 20px auto;
+}
+
+/deep/ cm-playing-card {
+  display: inline-block;
+}
+
+/deep/ cm-playing-card:nth-child(-n+4) { // first four cards have no margin
+  margin-top: 0;
+}
+
+.warn {
+  margin-top: 10px;
+  color: red;
+  font-weight: bolder;
+}
+
+@media print{
+  #noprint{
+    display:none;
+  }
+}
