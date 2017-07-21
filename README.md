@@ -11,7 +11,7 @@ TODO: Make this easier for non-technical users.
 
 1. Clone this repo
     
-       // git clone https://github.com/jdell64/cardMaker.git
+       git clone https://github.com/jdell64/cardMaker.git
 1. run `npm install`
 1. run `ng serve`
 1. add/edit a tsv file in `src/app/assets/card-lists`
